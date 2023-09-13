@@ -1,0 +1,82 @@
+/* news */
+
+.news {
+    height: 463px;
+    width: 1155px;
+    margin: 82px auto 0;
+}
+
+.news-ul {
+    height: 378px;
+    width: 100%;
+}
+
+.news-ul ul {
+    margin-top: 70px;
+}
+
+.news-ul li {
+    float: left;
+    height: 109px;
+    width: 503px;
+    margin-right: 74px;
+    margin-bottom: 40px;
+    /* background-color: red; */
+    position: relative;
+}
+
+.news-ul li:nth-of-type(even) {
+    margin-right: 0;
+}
+
+.news-ul .news-xuhao {
+    height: 65px;
+    width: 65px;
+    background-image: url(../img/talk-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-size: 40px;
+    color: #FFFFFF;
+    line-height: 65px;
+    position: absolute;
+}
+
+.news-ul .news-xuhao:hover {
+    animation: xuhao 1s ease 0s forwards;
+}
+
+
+@keyframes xuhao {
+    0% {
+        top: 0;
+    }
+
+    30% {
+        top: -10px;
+    }
+
+    100% {
+        top: 10px;
+    }
+}
+
+
+.news-ul .news-title {
+    height: 28px;
+    width: 84px;
+    font-size: 21px;
+    color: #4A4A4A;
+    position: absolute;
+    left: 103px;
+}
+
+.news-ul .news-text {
+    width: 400px;
+    height: 69px;
+    font-size: 18px;
+    color: #4A4A4A;
+    position: absolute;
+    left: 103px;
+    top: 40px;
+}

@@ -1,0 +1,189 @@
+/* 了解我们 */
+.about {
+    height: 456px;
+    width: 1155px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.us {
+    height: 82px;
+    width: 1155px;
+    position: relative;
+}
+
+
+/* 与新闻中心相同 */
+.section-header {
+    height: 42px;
+    width: 128px;
+    margin: 0 auto;
+    font-size: 32px;
+    color: #696868;
+}
+
+.hr {
+    height: 2px;
+    width: 1155px;
+    background-color: #808080;
+}
+
+.white-hr {
+    height: 2px;
+    width: 155px;
+    background-color: white;
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    margin-left: -77.5px;
+}
+
+.section-small-header {
+    height: 24px;
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #9B9B9B;
+    padding-bottom: 11px;
+    border-bottom: 3px solid #0058AA;
+}
+
+/* over */
+
+
+.about-left {
+    margin-top: 36px;
+    height: 242px;
+    width: 238px;
+    /* background: red; */
+    float: left;
+}
+
+.about-text1 {
+    height: 34px;
+    width: 104px;
+    font-size: 26px;
+    color: #0058AA;
+}
+
+.about-text2 {
+    height: 41px;
+    width: 231px;
+    font-size: 21px;
+    color: #5A5A5A;
+    line-height: 41px;
+}
+
+.about-lefthr {
+    height: 4px;
+    width: 142px;
+    background: #0058AA;
+}
+
+.about-text3 {
+    height: 78px;
+    width: 238px;
+    font-size: 18px;
+    color: #7B7C7C;
+    line-height: 26px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.about-button {
+    height: 38px;
+    width: 130px;
+    background: #0058AA;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 27px;
+    cursor: pointer;
+}
+
+@keyframes button-about {
+    from {
+        transform: rotate(10deg);
+    }
+
+    to {
+        transform: rotate(-10deg);
+    }
+}
+
+.about-button:hover {
+    animation: button-about 0.5s linear 0s infinite alternate;
+}
+
+.about-center {
+    height: 256px;
+    width: 384px;
+    background-image: url(../img/aboutus.png);
+    position: absolute;
+    top: 118px;
+    left: 50%;
+    margin-left: -192px;
+    background-position: center;
+    background-size: 100%;
+    transition: all 0.5s ease 0s;
+}
+
+.about-center:hover {
+    background-size: 150%;
+}
+
+.about-right {
+    height: 203px;
+    width: 273px;
+    float: right;
+    /* background-color: red; */
+    margin-top: 46px;
+}
+
+.about-right li {
+    height: 61px;
+    width: 273px;
+    margin-bottom: 10px;
+    background: #CCCCCC;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+.about-right li:last-child {
+    margin-bottom: 0;
+}
+
+.about-right li .about-img {
+    width: 40px;
+    height: 34px;
+    position: absolute;
+    left: 30px;
+    top: 14px;
+}
+
+.about-right li .about-right-text {
+    width: 88px;
+    height: 29px;
+    position: absolute;
+    left: 89px;
+    top: 10px;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.about-right li .about-right-text2 {
+    /* width: 133px; */
+    height: 14px;
+    position: absolute;
+    left: 89px;
+    top: 36px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.about-right li:hover {
+    background-color: #0058AA;
+}

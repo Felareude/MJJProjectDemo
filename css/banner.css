@@ -1,0 +1,39 @@
+/* banner部分 */
+
+.banner {
+    height: 650px;
+    width: 100%;
+    background-image: url(../img/banner01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: 1 1; */
+    background-size: cover;
+    position: relative;
+}
+
+.banner ul {
+    height: 10px;
+    width: 42px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -21px;
+}
+
+.banner li {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    float: left;
+    margin-right: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner .li-active {
+    background-color: #0058AA;
+}
+
+.banner li:last-child {
+    margin-right: 0;
+}

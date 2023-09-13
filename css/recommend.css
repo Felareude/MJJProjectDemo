@@ -1,0 +1,90 @@
+/* 推荐部分 */
+.recommend {
+    height: 590px;
+    width: 100%;
+    background: #EFF0F4;
+    /* overflow: hidden; */
+    /* ? */
+}
+
+.recommend-header {
+    height: 42px;
+    width: 128px;
+    margin: 72px auto 0;
+    font-size: 32px;
+    color: #696868;
+}
+
+.recommend-header2 {
+    height: 24px;
+    width: 232px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #9B9B9B;
+    text-align: right;
+}
+
+.recommend .blue-hr {
+    height: 3px;
+    width: 93px;
+    background-color: #0058AA;
+    margin: 16px auto 41px;
+}
+
+
+.recommend .recommend-ul {
+    width: 1083px;
+    height: 326px;
+    /* background: red; */
+    margin: 0 auto;
+    /* margin-left: 200px; */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.recommend ul {
+    width: 5000px;
+    height: 326px;
+    margin-left: 0px;
+}
+
+.recommend .ulbox {
+    width: 1083px;
+    height: 326px;
+    overflow: hidden;
+
+}
+
+.recommend-ul li {
+    width: 345px;
+    height: 326px;
+    float: left;
+    margin-right: 23px;
+    position: relative;
+}
+
+.recommend-ul li:last-child {
+    margin-right: 0;
+}
+
+.recommend-ul li div {
+    width: 345px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.50);
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 45px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+.recommend .left-arrow {
+    top: 139px;
+}
+
+.recommend .right-arrow {
+    top: 139px;
+}

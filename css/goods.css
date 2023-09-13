@@ -1,0 +1,74 @@
+/* 商品部分 */
+
+.goods {
+    width: 1056px;
+    height: 266px;
+    position: relative;
+    margin: 38px auto;
+    margin-bottom: 32px;
+    /* background-color: red; */
+}
+
+.goods .goods-view {
+    height: 234px;
+    width: 1056px;
+    margin: 38px auto;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.goods ul {
+    height: 234px;
+    width: 4000px;
+    margin-left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.goods li {
+    height: 100%;
+    width: 171px;
+    float: left;
+    margin-right: 50px;
+}
+
+.goods li div {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #838383;
+}
+
+.goods li:last-child {
+    margin-right: 0;
+}
+
+.left-arrow {
+    height: 48px;
+    width: 48px;
+    background-image: url(../img/prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 98px;
+    left: -73px;
+    cursor: pointer;
+}
+
+.right-arrow {
+    height: 48px;
+    width: 48px;
+    background-image: url(../img/next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 98px;
+    right: -73px;
+    cursor: pointer;
+}
+
+.left-arrow:hover {
+    background-image: url(../img/prev_active.png);
+}
+
+.right-arrow:hover {
+    background-image: url(../img/next_active.png);
+}
