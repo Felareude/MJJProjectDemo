@@ -1,0 +1,86 @@
+<!-- 
+.gitignore是一个忽略文件 把忽略掉的文件不会上传至ignore
+
+git add .  将剩余的本地文件添加到暂存区 
+如果把.改成文件名那么就是把该文件添加到暂存区
+git commit -m 暂存区的代码提交到远程仓库 每次commit都会有一个独特的id编码
+git status 查看状态
+git log 查看之前的提交记录
+git log --author='' 查看某个作者的提交记录
+git config --global user.name ""    为当前电脑设置名字
+git config --global user.email ""   为当前电脑设置邮箱
+
+删除文件可以手动删除然后再上传提交 也可以
+git rm 文件名       删除之后一定要把其他文件重新提交暂存区然后再提交
+直接手动修改名字会被认作删除一个文件再新建一个文件
+git mv 改动前名字 改动后名字        就是直接修改名字
+
+移动文件 比如移动到demo文件夹中
+git mv demo.html demo/dem.html      这意思是同时还可以修改名字 移动前必须要有这个文件夹
+查看一个文件的前后变化
+git log --pretty=oneline 文件路径/文件名 查看修改的方式
+git log -p 文件路径/文件名      查看修改的具体内容
+在文件修改还没提交之前 可以回到上一次提交的状态
+git log --oneline --graph 查看不同的分支的操作版本路线
+
+
+git diff 发现代码的不同（两次提交之间的修改之处）
+git checkout -- 文件路径/文件名         直接返回上一次提交状态
+将文件添加到暂存区会对文件进行追踪 进入tracked状态 无法用上一行的命令返回上一次提交的状态
+git reset HEAD 文件路径/文件名      取消追踪状态 才可以使用checkout 然后返回上一次提交的状态
+想要回到上一个版本或者指定版本（全部文件）
+git reset --hard HEAD^      一个尖括号代表回到上一个版本
+退回指定版本 使用版本对应的commitID/ID的前（7-8）几位
+git reset --hard 版本commitID
+
+单个文件回退到指定版本
+git checkout 版本commitID -- 文件名
+
+改动之后的代码推送到远程仓库
+git push origin 分支名（master/自己创建的分支）
+拉取文件到远程仓库 
+git fetch
+
+创建标签 
+git tag     查看所有标签
+git tag 标签名（一般是版本号）  默认把标签添加到最新的commit上面
+添加tag到之前的commit版本
+git tag 标签名 commitID
+针对某一次独特的commit来加上标签得到版本的作用
+git tag -d 标签名       删除这个标签
+推送标签到远程仓库
+git push origin 标签名
+
+分支
+支线用来完成局部的操作 用于多人开发 每个支线互不影响
+git branch 分支名   创建分支
+git branch      查看已经创建的分支
+切换分支
+git checkout 分支名
+删除分支  ！不能删除当前所在的分支
+如果当前分支有commit操作也是不能删除
+git branch -d 分支名
+git branch -D 分支名        强制删除 慎用
+创建并直接切换
+git checkout -b 分支名
+远端仓库的分支
+git branch -av
+合并分支
+先切换到合并完成后所剩的分支/主分支master 然后
+git merge 要合并分支的名字
+合并分支冲突 --不同分支修改相同文件的相同地方
+git merge --abort        忽略其他分支的修改
+其他方法直接团队协商修改 进入标识页面修改 最后重新commit
+删除一条分支上的全部内容    一定要先合并 并确定一定不许要
+git push origin --delete 分支名
+不同的人修改了不同的文件
+需要合并仓库上的代码
+git merge 其他人的代码--在远端仓库分支查看
+远端分支复制到本地并做关联
+git checkout -b 本地分支名 远端分支名
+
+谷歌浏览器的
+Octotree拓展程序 可以在github仓库中的左边显示仓库中的内容
+enhanced github 拓展程序 可以查看单个文件的大小 也可以直接下载单个文件
+gitzip for github 可以直接下载一个文件夹 双击文件夹的空白处
+ -->
